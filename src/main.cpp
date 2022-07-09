@@ -2,7 +2,8 @@
 
 int main()
 {
-    std::cout << "Hello world." << "\n";
-    float i = 5.3;
-    int x = 1;
+  std::cout << "Hello world."
+            << "\n";
+  float i = 5.3;
+  int x = 1;
 }
