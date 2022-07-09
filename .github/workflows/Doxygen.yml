@@ -4,7 +4,7 @@ on : push
 
 jobs: 
   doc-generate:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
       - name: Doxygen
         uses: mattnotmitt/doxygen-action@v1.9.4
