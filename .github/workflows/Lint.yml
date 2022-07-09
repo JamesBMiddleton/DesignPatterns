@@ -1,4 +1,4 @@
-name: DesignPatterns-CI
+name: Lint Code Base
 
 on: push
 
