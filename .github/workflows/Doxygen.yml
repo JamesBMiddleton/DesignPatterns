@@ -1,0 +1,16 @@
+name : Doxygen
+
+on : push
+
+jobs: 
+  doc-generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check repo
+        uses: actions/checkout@v3
+
+      - name: Doxygen
+        uses: mattnotmitt/doxygen-action@v1.9.4
+        with:
+          working-directory: 'src/'
+          doxyfile-path: 'docs/Doxygen'
