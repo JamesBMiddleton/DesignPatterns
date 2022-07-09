@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main()
-//! Doxygen comment.
+//! Doxygen comment. Hello world.
 {
   std::cout << "Hello world."
             << "\n";
