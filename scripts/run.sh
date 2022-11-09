@@ -1,8 +1,7 @@
 #! /bin/sh
 
-cd ..
-cmake -S . -B ./build
-cd build
+cmake -S . -B ./out/build
+cd out/build
 make
 ctest
 ./src/DesignPatterns
