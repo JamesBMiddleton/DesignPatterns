@@ -71,59 +71,62 @@ $(function() {
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="classCar.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCar.html">Car</a></div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="classTyres.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="classTyres.html">Tyres</a></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classCar.html#a16c048144bad2ddb4c0e73221ffdcf54">get_top_speed</a>() = 0; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> get_handling() = 0;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classCar.html">Car</a>();</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> _base_speed = 5;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> _base_handling = 5;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;};</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">inline</span> Car::~Car() {} <span class="comment">// linker complains when defined in source file...?</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classSportsCar.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSportsCar.html">SportsCar</a> : <span class="keyword">public</span> <a class="code" href="classCar.html">Car</a></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classSportsCar.html#afe92f90633f1d34f779f38d6392e68e8">   25</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classSportsCar.html#afe92f90633f1d34f779f38d6392e68e8">get_top_speed</a>() { <span class="keywordflow">return</span> _base_speed * 30; }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> get_handling() { <span class="keywordflow">return</span> _base_handling * 4; }</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classHatchBackCar.html">   32</a></span>&#160;<span class="keyword">class </span><a class="code" href="classHatchBackCar.html">HatchBackCar</a> : <span class="keyword">public</span> <a class="code" href="classCar.html">Car</a></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classHatchBackCar.html#ad879f50945ef4696342c19f5c80b5891">   35</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classHatchBackCar.html#ad879f50945ef4696342c19f5c80b5891">get_top_speed</a>() { <span class="keywordflow">return</span> _base_speed * 15; }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> get_handling() { <span class="keywordflow">return</span> _base_handling * 2; }</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classTyres.html#a14480789248ae2074f5dbb38b1b37462">get_psi</a>() = 0; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classTyres.html">Tyres</a>();</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> _base_psi = 30;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;};</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">inline</span> Tyres::~Tyres() {} <span class="comment">// linker complains when defined in source file...?</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classSportsTyres.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSportsTyres.html">SportsTyres</a> : <span class="keyword">public</span> <a class="code" href="classTyres.html">Tyres</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classSportsTyres.html#a3e2ef7d2b82143473ac5ca8537936527">   23</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classSportsTyres.html#a3e2ef7d2b82143473ac5ca8537936527">get_psi</a>() { <span class="keywordflow">return</span> _base_psi * 2; }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classEngine.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="classEngine.html">Engine</a></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> get_horse_power() = 0;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classEngine.html">Engine</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> _base_hp = 100;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="structMakeCar.html">   42</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structMakeCar.html">MakeCar</a></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classCar.html">Car</a> *make_car() = 0;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="structMakeCar.html">MakeCar</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">inline</span> MakeCar::~MakeCar() {}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">inline</span> Engine::~Engine() {}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classSportsEngine.html">   43</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSportsEngine.html">SportsEngine</a> : <span class="keyword">public</span> <a class="code" href="classEngine.html">Engine</a></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> get_horse_power() { <span class="keywordflow">return</span> _base_hp * 5; }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="structMakeSportsCar.html">   52</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structMakeSportsCar.html">MakeSportsCar</a> : <span class="keyword">public</span> <a class="code" href="structMakeCar.html">MakeCar</a></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="structMakeVehicleComponents.html">   52</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structMakeVehicleComponents.html">MakeVehicleComponents</a></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classCar.html">Car</a> *make_car() { <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classSportsCar.html">SportsCar</a>{}; }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="structMakeHatchBackCar.html">   60</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structMakeHatchBackCar.html">MakeHatchBackCar</a> : <span class="keyword">public</span> <a class="code" href="structMakeCar.html">MakeCar</a></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classCar.html">Car</a> *make_car() { <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classHatchBackCar.html">HatchBackCar</a>{}; }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classTyres.html">Tyres</a> *make_tyres() = 0;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classEngine.html">Engine</a> *make_engine() = 0;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="structMakeVehicleComponents.html">MakeVehicleComponents</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">inline</span> MakeVehicleComponents::~MakeVehicleComponents() {}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="structMakeSportsVehicleComponents.html">   63</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structMakeSportsVehicleComponents.html">MakeSportsVehicleComponents</a> : <span class="keyword">public</span> <a class="code" href="structMakeVehicleComponents.html">MakeVehicleComponents</a></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classTyres.html">Tyres</a> *make_tyres() { <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classSportsTyres.html">SportsTyres</a>{}; }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classEngine.html">Engine</a> *make_engine() { <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classSportsEngine.html">SportsEngine</a>{}; }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="astructMakeCar_html"><div class="ttname"><a href="structMakeCar.html">MakeCar</a></div><div class="ttdef"><b>Definition:</b> abstract_factory.h:42</div></div>
-<div class="ttc" id="aclassSportsCar_html_afe92f90633f1d34f779f38d6392e68e8"><div class="ttname"><a href="classSportsCar.html#afe92f90633f1d34f779f38d6392e68e8">SportsCar::get_top_speed</a></div><div class="ttdeci">virtual int get_top_speed()</div><div class="ttdoc">factory method pattern</div><div class="ttdef"><b>Definition:</b> abstract_factory.h:25</div></div>
-<div class="ttc" id="aclassCar_html"><div class="ttname"><a href="classCar.html">Car</a></div><div class="ttdef"><b>Definition:</b> abstract_factory.h:6</div></div>
-<div class="ttc" id="aclassHatchBackCar_html_ad879f50945ef4696342c19f5c80b5891"><div class="ttname"><a href="classHatchBackCar.html#ad879f50945ef4696342c19f5c80b5891">HatchBackCar::get_top_speed</a></div><div class="ttdeci">virtual int get_top_speed()</div><div class="ttdoc">factory method pattern</div><div class="ttdef"><b>Definition:</b> abstract_factory.h:35</div></div>
-<div class="ttc" id="aclassHatchBackCar_html"><div class="ttname"><a href="classHatchBackCar.html">HatchBackCar</a></div><div class="ttdef"><b>Definition:</b> abstract_factory.h:32</div></div>
-<div class="ttc" id="aclassCar_html_a16c048144bad2ddb4c0e73221ffdcf54"><div class="ttname"><a href="classCar.html#a16c048144bad2ddb4c0e73221ffdcf54">Car::get_top_speed</a></div><div class="ttdeci">virtual int get_top_speed()=0</div><div class="ttdoc">factory method pattern</div></div>
-<div class="ttc" id="astructMakeSportsCar_html"><div class="ttname"><a href="structMakeSportsCar.html">MakeSportsCar</a></div><div class="ttdef"><b>Definition:</b> abstract_factory.h:52</div></div>
-<div class="ttc" id="astructMakeHatchBackCar_html"><div class="ttname"><a href="structMakeHatchBackCar.html">MakeHatchBackCar</a></div><div class="ttdef"><b>Definition:</b> abstract_factory.h:60</div></div>
-<div class="ttc" id="aclassSportsCar_html"><div class="ttname"><a href="classSportsCar.html">SportsCar</a></div><div class="ttdef"><b>Definition:</b> abstract_factory.h:22</div></div>
+<div class="ttc" id="aclassEngine_html"><div class="ttname"><a href="classEngine.html">Engine</a></div><div class="ttdef"><b>Definition:</b> abstract_factory.h:29</div></div>
+<div class="ttc" id="aclassSportsTyres_html"><div class="ttname"><a href="classSportsTyres.html">SportsTyres</a></div><div class="ttdef"><b>Definition:</b> abstract_factory.h:20</div></div>
+<div class="ttc" id="aclassTyres_html"><div class="ttname"><a href="classTyres.html">Tyres</a></div><div class="ttdef"><b>Definition:</b> abstract_factory.h:6</div></div>
+<div class="ttc" id="aclassSportsEngine_html"><div class="ttname"><a href="classSportsEngine.html">SportsEngine</a></div><div class="ttdef"><b>Definition:</b> abstract_factory.h:43</div></div>
+<div class="ttc" id="aclassSportsTyres_html_a3e2ef7d2b82143473ac5ca8537936527"><div class="ttname"><a href="classSportsTyres.html#a3e2ef7d2b82143473ac5ca8537936527">SportsTyres::get_psi</a></div><div class="ttdeci">virtual int get_psi()</div><div class="ttdoc">factory method pattern</div><div class="ttdef"><b>Definition:</b> abstract_factory.h:23</div></div>
+<div class="ttc" id="astructMakeSportsVehicleComponents_html"><div class="ttname"><a href="structMakeSportsVehicleComponents.html">MakeSportsVehicleComponents</a></div><div class="ttdef"><b>Definition:</b> abstract_factory.h:63</div></div>
+<div class="ttc" id="aclassTyres_html_a14480789248ae2074f5dbb38b1b37462"><div class="ttname"><a href="classTyres.html#a14480789248ae2074f5dbb38b1b37462">Tyres::get_psi</a></div><div class="ttdeci">virtual int get_psi()=0</div><div class="ttdoc">factory method pattern</div></div>
+<div class="ttc" id="astructMakeVehicleComponents_html"><div class="ttname"><a href="structMakeVehicleComponents.html">MakeVehicleComponents</a></div><div class="ttdef"><b>Definition:</b> abstract_factory.h:52</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

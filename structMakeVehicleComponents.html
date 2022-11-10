@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Design Patterns: MakeCar Struct Reference</title>
+<title>Design Patterns: MakeVehicleComponents Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,28 +63,31 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="structMakeCar-members.html">List of all members</a>  </div>
+<a href="structMakeVehicleComponents-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">MakeCar Struct Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">MakeVehicleComponents Struct Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="abstract__factory_8h_source.html">abstract_factory.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for MakeCar:</div>
+Inheritance diagram for MakeVehicleComponents:</div>
 <div class="dyncontent">
-<div class="center"><img src="structMakeCar__inherit__graph.png" border="0" usemap="#MakeCar_inherit__map" alt="Inheritance graph"/></div>
+<div class="center"><img src="structMakeVehicleComponents__inherit__graph.png" border="0" usemap="#MakeVehicleComponents_inherit__map" alt="Inheritance graph"/></div>
 <!-- MAP 0 -->
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa0f925ce520dedf03150d8d45434a746"><td class="memItemLeft" align="right" valign="top"><a id="aa0f925ce520dedf03150d8d45434a746"></a>
-virtual <a class="el" href="classCar.html">Car</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>make_car</b> ()=0</td></tr>
-<tr class="separator:aa0f925ce520dedf03150d8d45434a746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22ff594bf5c42f541235c3c03bed9535"><td class="memItemLeft" align="right" valign="top"><a id="a22ff594bf5c42f541235c3c03bed9535"></a>
+virtual <a class="el" href="classTyres.html">Tyres</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>make_tyres</b> ()=0</td></tr>
+<tr class="separator:a22ff594bf5c42f541235c3c03bed9535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad4322da3b309cbd8036dae5517357a2"><td class="memItemLeft" align="right" valign="top"><a id="aad4322da3b309cbd8036dae5517357a2"></a>
+virtual <a class="el" href="classEngine.html">Engine</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>make_engine</b> ()=0</td></tr>
+<tr class="separator:aad4322da3b309cbd8036dae5517357a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Abstract Factory - declares interface for creating Cars </p>
+<div class="textblock"><p>Abstract Factory - declares interface for creating vehicle components. </p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/<a class="el" href="abstract__factory_8h_source.html">abstract_factory.h</a></li>
 </ul>

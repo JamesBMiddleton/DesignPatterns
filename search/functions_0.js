@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['get_5ftop_5fspeed_13',['get_top_speed',['../classCar.html#a16c048144bad2ddb4c0e73221ffdcf54',1,'Car::get_top_speed()'],['../classSportsCar.html#afe92f90633f1d34f779f38d6392e68e8',1,'SportsCar::get_top_speed()'],['../classHatchBackCar.html#ad879f50945ef4696342c19f5c80b5891',1,'HatchBackCar::get_top_speed()']]]
+  ['get_5fpsi_13',['get_psi',['../classTyres.html#a14480789248ae2074f5dbb38b1b37462',1,'Tyres::get_psi()'],['../classSportsTyres.html#a3e2ef7d2b82143473ac5ca8537936527',1,'SportsTyres::get_psi()']]]
 ];

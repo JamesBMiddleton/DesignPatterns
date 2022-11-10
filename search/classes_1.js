@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['hatchbackcar_8',['HatchBackCar',['../classHatchBackCar.html',1,'']]]
+  ['makesportsvehiclecomponents_8',['MakeSportsVehicleComponents',['../structMakeSportsVehicleComponents.html',1,'']]],
+  ['makevehiclecomponents_9',['MakeVehicleComponents',['../structMakeVehicleComponents.html',1,'']]]
 ];
