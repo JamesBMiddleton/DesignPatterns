@@ -1,63 +1,67 @@
 #include <iostream>
 
 //!
-//! Abstract product - declares an interface for all Cars.
+//! Abstract product - declares an interface for all Tyres.
 //!
-class Car
+class Tyres
 {
   public:
-    virtual int get_top_speed() = 0; //!< factory method pattern
-    virtual int get_handling() = 0;
-    virtual ~Car();
+    virtual int get_psi() = 0; //!< factory method pattern
+    virtual ~Tyres();
 
   protected:
-    const static int _base_speed = 5;
-    const static int _base_handling = 5;
+    const static int _base_psi = 30;
 };
-inline Car::~Car() {} // linker complains when defined in source file...?
+inline Tyres::~Tyres() {} // linker complains when defined in source file...?
 
 //!
-//! Concrete product - implements the Car interface.
+//! Concrete product - implements the Tyre interface.
 //!
-class SportsCar : public Car
+class SportsTyres : public Tyres
 {
   public:
-    virtual int get_top_speed() { return _base_speed * 30; }
-    virtual int get_handling() { return _base_handling * 4; }
+    virtual int get_psi() { return _base_psi * 2; }
 };
 
 //!
-//! Concrete product - implements the Car interface.
+//! Abstract product - declares an interface for all Engines.
 //!
-class HatchBackCar : public Car
+class Engine
 {
   public:
-    virtual int get_top_speed() { return _base_speed * 15; }
-    virtual int get_handling() { return _base_handling * 2; }
+    virtual int get_horse_power() = 0;
+    virtual ~Engine();
+
+  protected:
+    const static int _base_hp = 100;
+};
+inline Engine::~Engine() {}
+
+//!
+//! Concrete product - implements the Engine interface.
+//!
+class SportsEngine : public Engine
+{
+  public:
+    virtual int get_horse_power() { return _base_hp * 5; }
 };
 
 //!
-//! Abstract Factory - declares interface for creating Cars
+//! Abstract Factory - declares interface for creating vehicle components.
 //!
-struct MakeCar
+struct MakeVehicleComponents
 {
-    virtual Car *make_car() = 0;
-    virtual ~MakeCar();
+    virtual Tyres *make_tyres() = 0;
+    virtual Engine *make_engine() = 0;
+    virtual ~MakeVehicleComponents();
 };
-inline MakeCar::~MakeCar() {}
+inline MakeVehicleComponents::~MakeVehicleComponents() {}
 
 //!
-//! Concrete Factory - implements the MakeCar interface to make SportsCars
+//! Concrete Factory - implements the MakeVehicleComponents interface.
 //!
-struct MakeSportsCar : public MakeCar
+struct MakeSportsVehicleComponents : public MakeVehicleComponents
 {
-    virtual Car *make_car() { return new SportsCar{}; }
-};
-
-//!
-//! Concrete Factory - implements the MakeCar interface to make HatchBackCars
-//!
-struct MakeHatchBackCar : public MakeCar
-{
-    virtual Car *make_car() { return new HatchBackCar{}; }
+    virtual Tyres *make_tyres() { return new SportsTyres{}; }
+    virtual Engine *make_engine() { return new SportsEngine{}; }
 };

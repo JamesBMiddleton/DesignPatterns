@@ -2,20 +2,12 @@
 #include "../src/abstract_factory.h"
 #include "catch.hpp"
 
-TEST_CASE("sports car")
+TEST_CASE("make some sports vehicle components")
 {
-    MakeCar *car_factory = new MakeSportsCar{};
-    Car *car = car_factory->make_car();
+    MakeVehicleComponents *vehicle_factory = new MakeSportsVehicleComponents{};
+    Tyres *tyres = vehicle_factory->make_tyres();
+    Engine *engine = vehicle_factory->make_engine();
 
-    REQUIRE(car->get_top_speed() == 150);
-    REQUIRE(car->get_handling() == 20);
-}
-
-TEST_CASE("hatchback car")
-{
-    MakeCar *car_factory = new MakeHatchBackCar{};
-    Car *car = car_factory->make_car();
-
-    REQUIRE(car->get_top_speed() == 75);
-    REQUIRE(car->get_handling() == 10);
+    REQUIRE(tyres->get_psi() == 60);
+    REQUIRE(engine->get_horse_power() == 500);
 }
