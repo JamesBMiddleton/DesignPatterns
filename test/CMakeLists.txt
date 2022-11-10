@@ -1,7 +1,4 @@
 enable_testing()
 
-add_executable(first_test first_test.cpp)
-add_test(FirstTest first_test)
-
-add_executable(second_test second_test.cpp)
-add_test(SecondTest second_test)
+add_executable(factory_test abstract_factory_test.cpp)
+add_test(FactoryTest factory_test)
