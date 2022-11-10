@@ -1,4 +1,5 @@
 #include <iostream>
+#include <memory>
 
 //!
 //! Abstract product - declares an interface for all Tyres.
@@ -6,7 +7,7 @@
 class Tyres
 {
   public:
-    virtual int get_psi() = 0; //!< factory method pattern
+    virtual int get_psi() const = 0; //!< factory method pattern
     virtual ~Tyres();
 
   protected:
@@ -20,7 +21,7 @@ inline Tyres::~Tyres() {} // linker complains when defined in source file...?
 class SportsTyres : public Tyres
 {
   public:
-    virtual int get_psi() { return _base_psi * 2; }
+    virtual int get_psi() const { return _base_psi * 2; }
 };
 
 //!
@@ -29,7 +30,7 @@ class SportsTyres : public Tyres
 class Engine
 {
   public:
-    virtual int get_horse_power() = 0;
+    virtual int get_horse_power() const = 0;
     virtual ~Engine();
 
   protected:
@@ -43,7 +44,7 @@ inline Engine::~Engine() {}
 class SportsEngine : public Engine
 {
   public:
-    virtual int get_horse_power() { return _base_hp * 5; }
+    virtual int get_horse_power() const { return _base_hp * 5; }
 };
 
 //!
@@ -51,8 +52,8 @@ class SportsEngine : public Engine
 //!
 struct MakeVehicleComponents
 {
-    virtual Tyres *make_tyres() = 0;
-    virtual Engine *make_engine() = 0;
+    virtual std::unique_ptr<Tyres> make_tyres() = 0;
+    virtual std::unique_ptr<Engine> make_engine() = 0;
     virtual ~MakeVehicleComponents();
 };
 inline MakeVehicleComponents::~MakeVehicleComponents() {}
@@ -62,6 +63,13 @@ inline MakeVehicleComponents::~MakeVehicleComponents() {}
 //!
 struct MakeSportsVehicleComponents : public MakeVehicleComponents
 {
-    virtual Tyres *make_tyres() { return new SportsTyres{}; }
-    virtual Engine *make_engine() { return new SportsEngine{}; }
+    virtual std::unique_ptr<Tyres> make_tyres()
+    {
+        return std::unique_ptr<Tyres>{new SportsTyres{}};
+    }
+
+    virtual std::unique_ptr<Engine> make_engine()
+    {
+        return std::unique_ptr<Engine>{new SportsEngine{}};
+    }
 };
