@@ -1,5 +1,9 @@
 #include <memory>
 
+//!
+//! Product - produced by the Concrete Builder.
+//! A collection of neo-classical building designs.
+//!
 struct NeoClassicalDesigns
 {
     int museums = 0;
@@ -7,6 +11,9 @@ struct NeoClassicalDesigns
     int libraries = 0;
 };
 
+//!
+//! Abstract Builder - defines an interface for designing buildings.
+//!
 class Architect
 {
   public:
@@ -17,6 +24,10 @@ class Architect
 };
 inline Architect::~Architect(){};
 
+//!
+//! Conrete Builder - implements the Architect interface to design buildings
+//! in a neo-classical architectural style
+//!
 class NeoClassicalArchitect : public Architect
 {
   public:
@@ -29,6 +40,9 @@ class NeoClassicalArchitect : public Architect
     NeoClassicalDesigns designs;
 };
 
+//!
+//! Director - uses the Architect interface to create designs for a city.
+//!
 class UrbanPlanner
 {
   public:
