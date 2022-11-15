@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['architect_0',['Architect',['../classArchitect.html',1,'']]]
+  ['aluminium_0',['Aluminium',['../structAluminium.html',1,'']]],
+  ['architect_1',['Architect',['../classArchitect.html',1,'']]]
 ];

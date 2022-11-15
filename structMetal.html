@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Design Patterns: Architect Class Reference</title>
+<title>Design Patterns: Metal Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,36 +63,47 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="classArchitect-members.html">List of all members</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="structMetal-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Architect Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">Metal Struct Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="builder_8h_source.html">builder.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="prototype_8h_source.html">prototype.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Architect:</div>
+Inheritance diagram for Metal:</div>
 <div class="dyncontent">
-<div class="center"><img src="classArchitect__inherit__graph.png" border="0" usemap="#Architect_inherit__map" alt="Inheritance graph"/></div>
+<div class="center"><img src="structMetal__inherit__graph.png" border="0" usemap="#Metal_inherit__map" alt="Inheritance graph"/></div>
 <!-- MAP 0 -->
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a915a6156a3841063686c50696537537a"><td class="memItemLeft" align="right" valign="top"><a id="a915a6156a3841063686c50696537537a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>design_museum</b> ()=0</td></tr>
-<tr class="separator:a915a6156a3841063686c50696537537a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44c9dfcdf446572583c43941e40a788c"><td class="memItemLeft" align="right" valign="top"><a id="a44c9dfcdf446572583c43941e40a788c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>design_train_station</b> ()=0</td></tr>
-<tr class="separator:a44c9dfcdf446572583c43941e40a788c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20bb255e12a0791ff27f41979fa6e2c2"><td class="memItemLeft" align="right" valign="top"><a id="a20bb255e12a0791ff27f41979fa6e2c2"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>design_library</b> ()=0</td></tr>
-<tr class="separator:a20bb255e12a0791ff27f41979fa6e2c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07d8b5d1d3b06685fc0949bf0b913cad"><td class="memItemLeft" align="right" valign="top"><a id="a07d8b5d1d3b06685fc0949bf0b913cad"></a>
+virtual std::shared_ptr&lt; <a class="el" href="structMetal.html">Metal</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Clone</b> () const =0</td></tr>
+<tr class="separator:a07d8b5d1d3b06685fc0949bf0b913cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a31ced5f6b1f82f82953615fa23092626"><td class="memItemLeft" align="right" valign="top"><a id="a31ced5f6b1f82f82953615fa23092626"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_length</b></td></tr>
+<tr class="separator:a31ced5f6b1f82f82953615fa23092626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32f2997974a9006ade0c40156a74c7a7"><td class="memItemLeft" align="right" valign="top"><a id="a32f2997974a9006ade0c40156a74c7a7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_width</b></td></tr>
+<tr class="separator:a32f2997974a9006ade0c40156a74c7a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a4cd4790d79236bcd12d76f9ba7f2f23a"><td class="memItemLeft" align="right" valign="top"><a id="a4cd4790d79236bcd12d76f9ba7f2f23a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Metal</b> (int length, int width)</td></tr>
+<tr class="separator:a4cd4790d79236bcd12d76f9ba7f2f23a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Abstract Builder - defines an interface for designing buildings. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/<a class="el" href="builder_8h_source.html">builder.h</a></li>
+<div class="textblock"><p>Abstract product </p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li>src/<a class="el" href="prototype_8h_source.html">prototype.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
