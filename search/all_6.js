@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['tyres_13',['Tyres',['../classTyres.html',1,'']]]
+  ['neoclassicalarchitect_11',['NeoClassicalArchitect',['../classNeoClassicalArchitect.html',1,'']]],
+  ['neoclassicaldesigns_12',['NeoClassicalDesigns',['../structNeoClassicalDesigns.html',1,'']]]
 ];

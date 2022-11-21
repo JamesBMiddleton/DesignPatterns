@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Design Patterns: Class Hierarchy</title>
+<title>Design Patterns: Box Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -45,7 +45,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -60,42 +59,48 @@ $(function() {
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classBox-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Class Hierarchy</div>  </div>
+<div class="title">Box Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock">
-<p><a href="hierarchy.html">Go to the textual class hierarchy</a></p>
-</div><table border="0" cellspacing="10" cellpadding="0">
-<tr><td><img src="inherit_graph_0.png" border="0" usemap="#Architect" alt=""/>
+
+<p><code>#include &lt;<a class="el" href="composite_8h_source.html">composite.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Box:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBox__inherit__graph.png" border="0" usemap="#Box_inherit__map" alt="Inheritance graph"/></div>
 <!-- MAP 0 -->
-</td></tr>
-<tr><td><img src="inherit_graph_1.png" border="0" usemap="#CatBoxComponent" alt=""/>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for Box:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBox__coll__graph.png" border="0" usemap="#Box_coll__map" alt="Collaboration graph"/></div>
 <!-- MAP 1 -->
-</td></tr>
-<tr><td><img src="inherit_graph_2.png" border="0" usemap="#Engine" alt=""/>
-<!-- MAP 2 -->
-</td></tr>
-<tr><td><img src="inherit_graph_3.png" border="0" usemap="#MakeVehicleComponents" alt=""/>
-<!-- MAP 3 -->
-</td></tr>
-<tr><td><img src="inherit_graph_4.png" border="0" usemap="#Metal" alt=""/>
-<!-- MAP 4 -->
-</td></tr>
-<tr><td><img src="inherit_graph_5.png" border="0" usemap="#MetalShop" alt=""/>
-<!-- MAP 5 -->
-</td></tr>
-<tr><td><img src="inherit_graph_6.png" border="0" usemap="#NeoClassicalDesigns" alt=""/>
-<!-- MAP 6 -->
-</td></tr>
-<tr><td><img src="inherit_graph_7.png" border="0" usemap="#Tyres" alt=""/>
-<!-- MAP 7 -->
-</td></tr>
-<tr><td><img src="inherit_graph_8.png" border="0" usemap="#UrbanPlanner" alt=""/>
-<!-- MAP 8 -->
-</td></tr>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aba18a6c469de125d8ed9e145b3690e34"><td class="memItemLeft" align="right" valign="top"><a id="aba18a6c469de125d8ed9e145b3690e34"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add_component</b> (std::shared_ptr&lt; <a class="el" href="classCatBoxComponent.html">CatBoxComponent</a> &gt; component) override</td></tr>
+<tr class="separator:aba18a6c469de125d8ed9e145b3690e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a670aa90bcd2849ee9a1ad85f7a1b4df2"><td class="memItemLeft" align="right" valign="top"><a id="a670aa90bcd2849ee9a1ad85f7a1b4df2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>is_asleep</b> () const override</td></tr>
+<tr class="separator:a670aa90bcd2849ee9a1ad85f7a1b4df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b3195bade26a97a49f43a87674c2de6"><td class="memItemLeft" align="right" valign="top"><a id="a8b3195bade26a97a49f43a87674c2de6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>wakeup</b> () override</td></tr>
+<tr class="separator:a8b3195bade26a97a49f43a87674c2de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Composite - stores cats and redirects requests to all cats it stores. </p>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
+<li>src/<a class="el" href="composite_8h_source.html">composite.h</a></li>
+<li>src/composite.cpp</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
