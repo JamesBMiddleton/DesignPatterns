@@ -17,9 +17,9 @@ struct Metal
 };
 inline Metal::~Metal() {}
 
-//! 
+//!
 //! Concrete product
-//! 
+//!
 struct Aluminium : public Metal
 {
     Aluminium(int length, int width, int grade);
@@ -37,7 +37,7 @@ struct Steel : public Metal
     bool _is_stainless;
 };
 
-//! 
+//!
 //! Client - stores prototype Metals to clone.
 //!
 class MetalShop
