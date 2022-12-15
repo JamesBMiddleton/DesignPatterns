@@ -2,3 +2,5 @@
 ![GitHub CMake](https://github.com/JamesBMiddleton/DesignPatterns/workflows/CMake/badge.svg)
 # DesignPatterns
 Modern C++ implementations of the Gang of Four's Design Patterns
+
+[Doxygen documentation](https://jamesbmiddleton.github.io/DesignPatterns/annotated.html)
